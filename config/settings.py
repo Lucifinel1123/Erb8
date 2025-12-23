@@ -44,8 +44,12 @@ DJANGO_APPS = [
     'django.contrib.staticfiles', #some file(png) no change
 ]
 
-APPLICATION_APPS =['pages.apps.PagesConfig']
-# pages=folder name, apps= file name, PagesConfig = file centent
+APPLICATION_APPS = [
+    'pages.apps.PagesConfig',
+    'doctors.apps.DoctorsConfig',
+    'listings.apps.ListingsConfig',
+]
+# pages=folder name, apps= file name, XXXXConfig = file centent
 
 
 INSTALLED_APPS = DJANGO_APPS + APPLICATION_APPS
