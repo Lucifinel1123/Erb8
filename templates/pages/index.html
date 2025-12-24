@@ -14,8 +14,8 @@
             tempore! Consectetur, id commodi!
         </p>
         <div class="search">
-            {% comment %} need fix {% endcomment %}
-            <form action="search.html">
+            {% comment %} changed {% endcomment %}
+            <form action={% url "listings:search" %}>
             <!-- Form Row 1 -->
             <div class="form-row">
                 <div class="col-md-12 mb-3">
@@ -146,7 +146,7 @@
             </div>
             <hr />
             {% comment %} need fix {% endcomment %}
-            <a href="listing.html" class="btn btn-primary btn-block"
+            <a href= {% url "listings:index" %} class="btn btn-primary btn-block"
                 >More Info</a
             >
             </div>
@@ -202,7 +202,7 @@
             </div>
             <hr />
             {% comment %} need fix {% endcomment %}
-            <a href="listing.html" class="btn btn-primary btn-block"
+            <a href={% url "listings:index" %} class="btn btn-primary btn-block"
                 >More Info</a
             >
             </div>
@@ -256,7 +256,7 @@
             </div>
             <hr />
             {% comment %} need fix {% endcomment %}
-            <a href="listing.html" class="btn btn-primary btn-block"
+            <a href={% url "listings:index" %} class="btn btn-primary btn-block"
                 >More Info</a
             >
             </div>
